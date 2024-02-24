@@ -1,0 +1,26 @@
+1. creathe the environment
+
+conda create --name aaai24 python=3.11
+
+2. activate it
+
+conda activate aaai24
+
+3. Install dependencies
+
+ pip install scikit-learn
+
+ pip install gudhi
+ 
+ pip install pot
+ 
+ #includes pot-0.9.3
+ 
+ pip install persim
+ 
+ pip install seaborn
+ 
+ pip install torch
+
+ In general "pip install <package_name>" will install any missing package
+

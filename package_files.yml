@@ -1,0 +1,9 @@
+python3.10 or higher: lower versions do not support calling static methods inside the class
+numpy-1.26.2
+matplotlib
+persim
+ripser
+tqdm
+torch # pay attention if you do not have nvidia card to avoid install a lot if nvidia related packages
+#pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cpu
+python -m pip install <package name>

@@ -1,0 +1,114 @@
+The project directory is the following
+
+├── applications.py --> Applications are persistence diagrams (PD) generators and experiment controllers. 
+├── datasets		--> Holds the data
+│   ├── autoencoder	
+│   │   ├── 1.inputs-spheres.npy --> *spheres.npy = point clouds, *ripser.npy corresponding PD
+│   │   ├── 1.inputs-spheres-ripser.npy
+│   │   ├── 2.enc1-spheres.npy
+│   │   ├── 2.enc1-spheres-ripser.npy
+│   │   ├── 3.enc2-spheres.npy
+│   │   ├── 3.enc2-spheres-ripser.npy
+│   │   ├── 4. z-spheres.npy
+│   │   ├── 4. z-spheres-ripser.npy
+│   │   ├── 5.dec1-spheres.npy
+│   │   ├── 5.dec1-spheres-ripser.npy
+│   │   ├── 6.dec2-spheres.npy
+│   │   ├── 6.dec2-spheres-ripser.npy
+│   │   ├── 7.reconstruction-spheres.npy
+│   │   ├── 7.reconstruction-spheres-ripser.npy
+│   │   ├── AE_lrelu.pt	 -----------------------> *.pt are precomputed models							
+│   │   ├── AE.pt
+│   │   ├── AE_relu.pt
+│   │   ├── DAE.pt
+│   │   ├── data_generator.py
+│   │   ├── diagrams_lrelu.pkl	-----------> all lrelu persistence diagrams
+│   │   ├── hypershere_autoencoder.ipynb	---> generate AE models, point clouds, and PD.
+│   │   ├── __init__.py
+│   │   ├── README.md
+│   │   ├── spheres_lrelu.png			---> *.png images of PD per layer
+│   │   ├── spheres_relu.png
+│   │   └── spheres_tanh.png
+│   ├── __init__.py
+│   ├── outex_tc_00024			---> outex dataset
+│   │   ├── data
+│   │   │   ├── 000
+│   │   │   │   ├── classes.txt
+│   │   │   │   ├── test.txt
+│   │   │   │   └── train.txt
+│   │   │   ├── 001
+│   │   │   │   ├── classes.txt
+│   │   │   │   ├── test.txt
+│   │   │   │   └── train.txt
+│   │   │   ├── 002
+│   │   │   │   ├── classes.txt
+│   │   │   │   ├── test.txt
+│   │   │   │   └── train.txt
+│   │   │   ├── defs.txt
+│   │   │   ├── images
+│   │   │   │   ├── 000000.bmp		-----> since it is a image dataset we use Cubical complex to generate PDs
+│   │   │   │   ├── 000001.bmp
+│   │   │   │   ├── 000002.bmp
+|	|	|	|	|---..........   
+│   │   │   │   └── 004079.bmp
+│   │   │   └── problems.txt
+│   │   ├── __init__.py
+│   │   ├── outer_reader.py
+│   │   └── readme.md
+│   
+├── experiments
+│   ├── ae_experiment.py
+│   ├── basic_etd_vs_etda.py
+│   ├── etda_vs_different_distances.py
+│   ├── etda_vs_rest.py
+│   ├── every_pair_sequence_fixed.py
+│   ├── every_pair_sequence.py
+│   ├── experiments_lessold.py
+│   ├── experiments_old.py
+│   ├── experiments.py
+│   ├── __init__.py
+│   ├── outex_experiment.py
+│   └── tda_based_distance_comparison.py
+|
+├── main.py                
+├── pseudo-distance-env.yml
+├── README.md
+├── requirements.txt
+├── results
+│   ├── AutoencoderWeightTopologyApp
+│   ├── README.md
+│   └── SupervisedLearningApp
+│       └── OutexProcessor
+│           └── train
+│               ├── 23.08.13__12.05.28_result_file.txt --> *_result_file.txt the file of classification results
+│               ├── 23.08.15__10.30.01_result_file.txt
+│               ├── cubical_train_0.diag               ---> topological info (diagrams, and diagram images)
+│               ├── cubical_train_0.diag.barcode.png
+│               ├── cubical_train_0.diag.pdiagram.png
+│               ├── .................................
+│               ├── cubical_train_N.diag
+│               ├── cubical_train_N.diag.barcode.png
+│               ├── cubical_train_N.diag.pdiagram.png
+│               ├── distances                           ----> we store distances to avoid recompute them
+│                   ├── BASIC_ETD_0_1360.pickle
+│                   ├── BASIC_ETD_1_1360.pickle
+│                   ├── BASIC_ETD_2_1360.pickle
+│                   ├── BASIC_ETD_2_200.pickle
+│                   ├── ETD__2_200_A1_A2_A4_A8_A16_A32_A48.pickle
+│                   ├── ETD__2_200_A1_A2_A4_A8_A16_old.pickle
+│                   ├── ETD__2_200_A2_A4_A8_A16.pickle
+│                   ├── HERA_WD_2_200.pickle
+│                   ├── PS_2_200.pickle
+│                   ├── SWD_2_200.pickle
+│                   └── WD_2_200.pickle
+└── utilities
+    ├── directoy_helper.py
+    ├── distance_matrix_helper.py
+    ├── extended_topology_distance.py
+    ├── information_visualization_helpers.py
+    ├── __init__.py
+    ├── persistence_diagram_helper.py
+    ├── README.md
+    ├── supervised_learning_helper.py
+    ├── tda_helper.py
+    └── topological_information_provider.py
