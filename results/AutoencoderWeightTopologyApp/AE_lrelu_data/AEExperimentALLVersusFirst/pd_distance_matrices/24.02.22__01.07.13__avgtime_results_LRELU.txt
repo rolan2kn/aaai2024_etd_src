@@ -1,0 +1,22 @@
+Activation: LRELU
+APPROACH: (2) -> 1. each vs previous, 2. each vs first
+PS: 40.84236571428572 milliseconds
+FISHER_KERNEL: 3526.6408538571427 milliseconds
+WD: 25488.96794057143 milliseconds
+HERA_WD: 13395.038125285713 milliseconds
+SWD: 2693.1507432857143 milliseconds
+SWD_M1: 97.41159242857144 milliseconds
+SWD_M2: 160.04992514285715 milliseconds
+SWD_M4: 257.90441285714286 milliseconds
+SWD_M8: 519.22797 milliseconds
+SWD_M16: 956.2357845714287 milliseconds
+BasicETD: 4.888837857142858 milliseconds
+ETD_A2: 87.12410599999998 milliseconds
+ETD_A4: 165.1867797142857 milliseconds
+ETD_A8: 344.07923314285716 milliseconds
+ETD_A16: 732.7322875714286 milliseconds
+npBasicETD: 4.765975 milliseconds
+npETD_A2: 2.7837428571428573 milliseconds
+npETD_A4: 4.269897285714285 milliseconds
+npETD_A8: 8.442439857142856 milliseconds
+npETD_A16: 16.913301714285716 milliseconds
