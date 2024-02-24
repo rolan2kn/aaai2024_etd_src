@@ -114,9 +114,3 @@ Rolando Kindelan Nuñez, Mircea Petrache, Mauricio Cerda, Nancy Hitschfeld. "A C
       archivePrefix={arXiv},
       primaryClass={cs.CG}
 }
-
-
-
-# aaai2024_etd
-# aaai2024_etd
-# aaai24_etd_src
