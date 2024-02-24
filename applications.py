@@ -61,7 +61,7 @@ class SupervisedLearningApp(Application):
         '''
         '''
         bag_of_experiments = {DataProcessorFactory.OUTEX: OutexExperiment,
-                              DataProcessorFactory.FASHION: FashionExperiment,
+                              DataProcessorFactory.FASHION_HOG: FashionExperiment,
                               DataProcessorFactory.SHREC07: Shrec07Experiment}
 
         for data_type in self.data_processors:
