@@ -12,7 +12,7 @@ The unit contains a small set of tests comparing naive implementation versus the
 
 <img src = "./profiling.jpg">
 
-Here are an usage example, considering that we have the resulting persistence diagrams on Schrec07 dataset in the predefined location.
+Here are an usage example, considering that we have the resulting persistence diagrams on Shrec07 dataset in the predefined location.
 If not, any two persistence diagrams can be used instead of P1 and P2.
 ```python
 
